@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label stacked>Set Nickname</ion-label>
+    <ion-input type="text" [(ngModel)]="nickname" placeholder="nickname"></ion-input>
+  </ion-item>
+  <button ion-button full (click)="jointChat()" [disabled]="nickname === ''">Joint chat as {{ nickname }}</button>
+</ion-content>
